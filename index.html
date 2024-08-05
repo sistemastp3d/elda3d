@@ -69,14 +69,15 @@
             display: flex;
             align-items: center;
             justify-content: right;
-            background-color: #32CD32; /* Fondo verde */
+            background-color: #35CB67; /* Fondo verde */
             color: white;
             height: auto; /* Cambiar a auto para permitir que la altura se ajuste al contenido */
         }
 
         .text-container {
             flex: 1;
-            padding: 20px;
+            padding: 100px;
+            text-align: left;
         }
 
         .image-container {
@@ -92,7 +93,7 @@
             height: auto;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 913px) {
         .section {
             flex-direction: column;
             padding: 0;
@@ -123,6 +124,23 @@
             width: auto;
         }
     }
+
+    .text-container h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 4rem; /* Aumenta el tamaño del título principal */
+        padding-bottom: 50px;
+    }
+
+    .text-container h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.5rem; /* Aumenta el tamaño del subtítulo */
+    }
+
+    .text-container p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem; /* Aumenta el tamaño del texto del párrafo */
+    }
+
     
     </style>
 </head>
@@ -186,8 +204,9 @@
     <div class="section">
         <div class="text-container">
             <h1>FILAMENTO 3D</h1>
-            <h2>¿Qué hace que nuestro filamento sea excepcional?</h2>
-            <p>La calidad del filamento es un factor crítico en la impresión 3D, donde la consistencia y la pureza del material son esenciales para obtener resultados exitosos.</p>
+            <h2>¿Qué hace que nuestro filamento<br> sea excepcional?</h2>
+            <p>La calidad del filamento es un factor<br> crítico en la impresión 3D, donde la<br>
+                 consistencia y la pureza del material<br> son esenciales para obtener resultados exitosos.</p>
         </div>
         <div class="image-container">
             <img src="../imagenes/Filamento3d.png" alt="Filamento 3D" style="width: 100%; height: auto;">
