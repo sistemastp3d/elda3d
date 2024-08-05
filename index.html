@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELDA - Innovación y Calidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+        
         .hero {
             background-image: url(../imagenes/imagen1.png);
             background-size: cover;
@@ -23,18 +29,41 @@
         .hero h1 {
             font-size: 3rem;
             line-height: 1.5; /* Espaciado entre líneas */
-            background-color: #181A1D;
+            font-family: 'Space Grotesk', sans-serif;
             display: inline-block;
             padding: 10px 20px;
             margin: 0;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
             
+        }
+        h1  span{
+            background: #181A1D;
+            color: #fff;
+            padding: 5px 30px 0;
         }
         .services .card img {
             height: 200px;
             object-fit: cover;
         }
         .services p {
-            margin-top: 20px;
+            margin-top: 30px;
+        }
+        .navbar-nav .nav-item {
+            margin: 0 60px; /* Agrega margen a los elementos de navegación */
+        }
+        .navbar-nav .nav-link {
+            font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a los enlaces de navegación */
+            font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
+            font-weight: 700; /* Hace que el texto esté en negrita */
+        }
+        .custom-p {
+            font-family: 'Open Sans', sans-serif; /* Aplica la fuente Open Sans al párrafo */
+            font-size: 1.5rem; /* Ajusta el tamaño de la fuente del párrafo */
+        }
+        .custom-p2{
+            font-family: 'Open Sans', sans-serif; /* Aplica la fuente Open Sans al párrafo */
+            font-size: 1.3rem; /* Ajusta el tamaño de la fuente del párrafo */
         }
     </style>
 </head>
@@ -42,7 +71,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand mx-auto" href="#"><img src="imagenes/logo.png" alt="Logo ELDA" height="40"></a> <!-- logo -->
+            <a class="navbar-brand mx-auto" href="#"><img src="../imagenes/logo_elda.png" alt="Logo ELDA" height="40"></a> <!-- logo -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,37 +90,39 @@
 
     <!-- Hero Section -->
     <div class="hero h1">
-        <h1>ELDA, comprometidos con <br> la Innovación y Calidad</h1>
+        <h1><span>ELDA, comprometidos con <br> la Innovación y Calidad</span></h1>
     </div>
 
     <!-- Descripción -->
     <div class="container text-center my-5">
-        <p>En ELDA, nuestro enfoque primordial reside en la constante creación de productos innovadores y métodos de producción avanzados, siempre comprometidos en proporcionar productos de calidad excepcional y soluciones innovadoras.</p>
+        <p class="custom-p">En ELDA, nuestro enfoque primordial reside en la constante creación de 
+            <b>productos innovadores y métodos de producción avanzados</b>,
+             siempre comprometidos en proporcionar productos de calidad excepcional y soluciones innovadoras.</p>
     </div>
 
     <!-- Servicios -->
     <div class="container text-center my-5">
-        <h2>Servicios: ¿Qué ofrecemos?</h2>
+        <h2>Servicios:<br>¿Qué ofrecemos?</h2>
         <div class="row services">
             <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
-                    <img src="imagenes/extrusion.jpg" class="card-img-top" alt="Extrusión de Filamento 3D">
+                <div class="card mb-4 shadow-sm bg-dark text-white">
+                    <img src="../imagenes/extrusion.png" class="card-img-top" alt="Extrusión de Filamento 3D">
                     <div class="card-body">
                         <h5 class="card-title">Extrusión de Filamento 3D</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
-                    <img src="imagenes/inyeccion.jpg" class="card-img-top" alt="Inyección de Plástico">
+                <div class="card mb-4 shadow-sm bg-dark text-white">
+                    <img src="../imagenes/inyeccion.png" class="card-img-top" alt="Inyección de Plástico">
                     <div class="card-body">
                         <h5 class="card-title">Inyección de Plástico</h5>
                     </div>
                 </div>
             </div>
         </div>
-        <p>Nuestros servicios son extensos y meticulosamente personalizados, asegurando satisfacer diversas necesidades industriales con una gama amplia de materiales y tecnología de última generación.</p>
-        <p>Diversidad de Aplicaciones: Desde prototipos hasta producción en masa, cubrimos una amplia gama de necesidades industriales y comerciales.</p>
+        <p class="custom-p2">Nuestros servicios son extensos y meticulosamente personalizados, asegurando satisfacer diversas necesidades industriales con una gama amplia de materiales y tecnología de última generación.</p>
+        <p class="custom-p2">Diversidad de Aplicaciones: Desde prototipos hasta producción en masa, cubrimos una amplia gama de necesidades industriales y comerciales.</p>
     </div>
    
 </body>
