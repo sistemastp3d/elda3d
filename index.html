@@ -65,6 +65,65 @@
             font-family: 'Open Sans', sans-serif; /* Aplica la fuente Open Sans al párrafo */
             font-size: 1.3rem; /* Ajusta el tamaño de la fuente del párrafo */
         }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            background-color: #32CD32; /* Fondo verde */
+            color: white;
+            height: auto; /* Cambiar a auto para permitir que la altura se ajuste al contenido */
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container {
+            flex:1;
+            display: flex;
+            justify-content:right;
+            align-items:center;
+            padding: 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+        .section {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .text-container {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .image-container {
+            width: 100%;
+            padding: 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .section .image-container {
+            height: 50vh;
+        }
+
+        .section img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    
     </style>
 </head>
 <body>
@@ -124,6 +183,15 @@
         <p class="custom-p2">Nuestros servicios son extensos y meticulosamente personalizados, asegurando satisfacer diversas necesidades industriales con una gama amplia de materiales y tecnología de última generación.</p>
         <p class="custom-p2">Diversidad de Aplicaciones: Desde prototipos hasta producción en masa, cubrimos una amplia gama de necesidades industriales y comerciales.</p>
     </div>
-   
+    <div class="section">
+        <div class="text-container">
+            <h1>FILAMENTO 3D</h1>
+            <h2>¿Qué hace que nuestro filamento sea excepcional?</h2>
+            <p>La calidad del filamento es un factor crítico en la impresión 3D, donde la consistencia y la pureza del material son esenciales para obtener resultados exitosos.</p>
+        </div>
+        <div class="image-container">
+            <img src="../imagenes/Filamento3d.png" alt="Filamento 3D" style="width: 100%; height: auto;">
+        </div>
+    </div>
 </body>
 </html>
