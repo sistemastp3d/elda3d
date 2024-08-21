@@ -292,7 +292,7 @@
     }
 }
 .expansion-section {
-            padding: 50px 0;
+            padding: 200px 0;
         }
         .expansion-section .text-column {
             font-size: 1.2rem;
@@ -313,8 +313,12 @@
             text-align: center;
         }
         .footer-section .footer-logo {
-            margin-bottom: 20px;
+            margin-bottom: 1px;
         }
+        .footer-logo-img {
+        width: 150px; /* Aquí ajustas el tamaño del logo */
+        height: auto;
+    }
     </style>
 </head>
 <body>
@@ -584,7 +588,7 @@
                 <div class="map-responsive" style="min-height: 65vh;">
                     <iframe 
                         src="https://maps.google.com/maps?q=blvd.+juan+bautista+alberdi+180%2C+pilar%2C+cordoba&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" 
+                        width="500%" 
                         height="450" 
                         style="border:0;" 
                         allowfullscreen="" 
@@ -603,7 +607,12 @@
           <p>Si estás involucrado en el sector de la tecnología y la impresión 3D y deseas comercializar nuestros productos bajo tu propia marca, ofrece la calidad de Elda como fabricante y súmate a un negocio en constante expansión.</p>
       </div>
       <div class="col-md-6 form-column">
-          <span>Formulario</span>
+          <script data-b24-form="inline/100/9lpv04" data-skip-moving="true">
+(function(w,d,u){
+var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+})(window,document,'https://cdn.bitrix24.es/b12173527/crm/form/loader_100.js');
+</script>
       </div>
   </div>
 </section>
@@ -613,7 +622,7 @@
   <div class="container">
       <div class="row">
           <div class="col-md-4 footer-logo">
-              <img src="logo.png" alt="ELDA Logo">
+              <img src="../imagenes/logo_elda.webp" alt="ELDA Logo" class="footer-logo-img">
           </div>
           <div class="col-md-4">
               <h5>Contactanos</h5>
