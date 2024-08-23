@@ -123,6 +123,14 @@
             height: 100%;
             width: auto;
         }
+
+
+        .text-container p{
+
+          text-align: left;
+
+        }
+
     }
 
     .text-container h1 {
@@ -318,8 +326,21 @@
         .footer-logo-img {
         width: 150px; /* Aquí ajustas el tamaño del logo */
         height: auto;
-    }
-    </style>
+}
+      @media (max-width: 767.98px) {
+        .map-section {
+          padding: 0 15px; /* Adjust padding for small screens */
+        }
+        .custom {
+          text-align: center;
+          font-size: 3rem; /* Adjust font size for smaller screens if needed */
+        }
+        .custom-p {
+          text-align: center;
+          font-size: 1.5rem; /* Adjust font size for smaller screens if needed */
+        }
+      }
+</style>
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -334,26 +355,24 @@
                     <li class="nav-item"><a class="nav-link" href="#">Filamento 3D</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Extrusión de Filamento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ecofila</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ecofila.html">Ecofila</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
+    <!-- FIN Barra de navegación -->
     <!-- Hero Section -->
     <div class="hero h1">
         <h1><span>ELDA, comprometidos con <br> la Innovación y Calidad</span></h1>
     </div>
-
-    <!-- Descripción -->
+      <!-- Descripción -->
     <div class="container text-center my-5">
         <p class="custom-p">En ELDA, nuestro enfoque primordial reside en la constante creación de 
             <b>productos innovadores y métodos de producción avanzados</b>,
              siempre comprometidos en proporcionar productos de calidad excepcional y soluciones innovadoras.</p>
     </div>
-
+    <!-- FIN Descripción -->
     <!-- Servicios -->
     <div class="container text-center my-5">
         <h2>Servicios:<br>¿Qué ofrecemos?</h2>
@@ -378,23 +397,27 @@
         <p class="custom-p2">Nuestros servicios son extensos y meticulosamente personalizados, asegurando satisfacer diversas necesidades industriales con una gama amplia de materiales y tecnología de última generación.</p>
         <p class="custom-p2">Diversidad de Aplicaciones: Desde prototipos hasta producción en masa, cubrimos una amplia gama de necesidades industriales y comerciales.</p>
     </div>
+    <!-- FIN Servicios -->
+    <!-- Seccion Mitad Verde Mitad Imagen -->    
     <div class="section">
         <div class="text-container">
             <h1>FILAMENTO 3D</h1>
-            <h2>¿Qué hace que nuestro filamento<br> sea excepcional?</h2>
-            <p>La calidad del filamento es un factor<br> crítico en la impresión 3D, donde la<br>
-                 consistencia y la pureza del material<br> son esenciales para obtener resultados exitosos.</p>
+            <h2>¿Qué hace que nuestro filamento<br class=".hide-on-small"> sea excepcional?</h2>
+            <p>La calidad del filamento es un factor<br class=".hide-on-small"> crítico en la impresión 3D, donde la<br class=".hide-on-small">
+                 consistencia y la pureza del material<br class=".hide-on-small"> son esenciales para obtener resultados exitosos.</p>
         </div>
         <div class="image-container">
             <img src="../imagenes/Filamento3d.webp" alt="Filamento 3D" style="width: 100%; height: auto;">
         </div>
     </div>
+    <!-- FIN Seccion Mitad Verde Mitad Imagen -->    
+    <!-- Seccion Imagen maquina y titulo Extruccion de filamento -->    
     <div class="hero h1">
         <h1><span>Extrusión de Filamento: <br> Un Proceso Detallado y Preciso</span></h1>
     </div>
-
- <div class="custom-bg">
-    <div class="container mt-5 mb-5">
+    <!-- FIN Seccion Imagen maquina y titulo Extruccion de filamento -->
+    <div class="custom-bg">
+      <div class="container mt-5 mb-5">
         <!-- Grid layout for larger screens -->
         <div class="row row-cols-1 row-cols-md-2 g-4 d-none d-md-flex custom-bg">
           <div class="col">
@@ -461,134 +484,133 @@
               </div>
             </div>
           </div>
-        </div>
-    
-<!-- Carousel layout for smaller screens -->
-<div id="carouselCards" class="carousel slide d-md-none mb-4 bg-light" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">1. Preparación de Materiales</h5>
-            <p class="card-text">Los polímeros son preparados en forma de pequeños gránulos o pellets. Estos pellets pueden incluir colores y otros aditivos según las especificaciones del filamento a producir.</p>
           </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">2. Deshumidificación</h5>
-            <p class="card-text">Los pellets pasan por un proceso de deshumidificación para eliminar cualquier traza de humedad que pueda afectar la calidad del filamento durante la extrusión.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">3. Alimentación al Extrusor</h5>
-            <p class="card-text">Los pellets deshumidificados se cargan en el extrusor, una máquina especializada que fundirá y formará el filamento.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">4. Proceso de Fusión</h5>
-            <p class="card-text">Dentro del extrusor, los pellets se calientan hasta alcanzar un estado fundido. Este proceso es cuidadosamente controlado para mantener una temperatura constante y asegurar la uniformidad del material fundido.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">5. Formación del Filamento</h5>
-            <p class="card-text">El material fundido es luego forzado a través de una boquilla, la cual determina el diámetro del filamento. A medida que el material sale de la boquilla, se enfría y solidifica, tomando la forma deseada del filamento.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">6. Enfriamiento</h5>
-            <p class="card-text">El filamento se enfría adicionalmente al pasar por una serie de rodillos y ventiladores que ayudan a solidificar completamente el material y a mantener su forma.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">7. Bobinado</h5>
-            <p class="card-text">Finalmente, el filamento es enrollado en una bobina, preparándolo para su empaquetado y posterior uso en impresoras 3D.</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">8. Empaquetado al Vacío</h5>
-            <p class="card-text">Las bobinas de filamento se empacan al vacío junto con bolsitas de sílica gel. El empaque al vacío asegura que no entre humedad al filamento, mientras que el sílica gel ayuda a absorber cualquier resto de humedad que pueda quedar, manteniendo el filamento en óptimas condiciones hasta su uso.</p>
-          </div>
-        </div>
       </div>
     </div>
-    
-    <!-- Indicadores personalizados -->
-    <div class="carousel-indicators mb-3">
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="6" aria-label="Slide 7"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <!-- Carousel layout for smaller screens -->
+    <div id="carouselCards" class="carousel slide d-md-none mb-4 bg-light" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">1. Preparación de Materiales</h5>
+                <p class="card-text">Los polímeros son preparados en forma de pequeños gránulos o pellets. Estos pellets pueden incluir colores y otros aditivos según las especificaciones del filamento a producir.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">2. Deshumidificación</h5>
+                <p class="card-text">Los pellets pasan por un proceso de deshumidificación para eliminar cualquier traza de humedad que pueda afectar la calidad del filamento durante la extrusión.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">3. Alimentación al Extrusor</h5>
+                <p class="card-text">Los pellets deshumidificados se cargan en el extrusor, una máquina especializada que fundirá y formará el filamento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">4. Proceso de Fusión</h5>
+                <p class="card-text">Dentro del extrusor, los pellets se calientan hasta alcanzar un estado fundido. Este proceso es cuidadosamente controlado para mantener una temperatura constante y asegurar la uniformidad del material fundido.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">5. Formación del Filamento</h5>
+                <p class="card-text">El material fundido es luego forzado a través de una boquilla, la cual determina el diámetro del filamento. A medida que el material sale de la boquilla, se enfría y solidifica, tomando la forma deseada del filamento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">6. Enfriamiento</h5>
+                <p class="card-text">El filamento se enfría adicionalmente al pasar por una serie de rodillos y ventiladores que ayudan a solidificar completamente el material y a mantener su forma.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">7. Bobinado</h5>
+                <p class="card-text">Finalmente, el filamento es enrollado en una bobina, preparándolo para su empaquetado y posterior uso en impresoras 3D.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">8. Empaquetado al Vacío</h5>
+                <p class="card-text">Las bobinas de filamento se empacan al vacío junto con bolsitas de sílica gel. El empaque al vacío asegura que no entre humedad al filamento, mientras que el sílica gel ayuda a absorber cualquier resto de humedad que pueda quedar, manteniendo el filamento en óptimas condiciones hasta su uso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Indicadores personalizados -->
+        <div class="carousel-indicators mb-3">
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
-  
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<div class="container text-center my-5">
-  <h2>Fabricantes de <span style="color: green;">ECO</span>FILA</h2>
-  <div class="row justify-content-center">
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../imagenes/ECOFILA.webp" alt="Ecofila" class="img-fluid">
+    <div class="container text-center my-5">
+      <h2>Fabricantes de <span style="color: green;">ECO</span>FILA</h2>
+      <div class="row justify-content-center">
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+              <img src="../imagenes/ECOFILA.webp" alt="Ecofila" class="img-fluid">
+          </div>
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+              <img src="../imagenes/ECOFILA-RECARGA.webp" alt="Ecofila Recarga" class="img-fluid">
+          </div>
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+              <img src="../imagenes/ECOFILA-XL.webp" alt="Ecofila XL" class="img-fluid">
+          </div>
+          <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
+              <img src="../imagenes/ECOFILA-RECARGA-XL.webp" alt="Ecofila Recarga XL" class="img-fluid">
+          </div>
       </div>
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../imagenes/ECOFILA-RECARGA.webp" alt="Ecofila Recarga" class="img-fluid">
+      <div class="row justify-content-center">
+          <div class="col-auto">
+              <button class="btn btn-outline-dark btn-custom">Conocé más</button>
+          </div>
       </div>
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../imagenes/ECOFILA-XL.webp" alt="Ecofila XL" class="img-fluid">
-      </div>
-      <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
-          <img src="../imagenes/ECOFILA-RECARGA-XL.webp" alt="Ecofila Recarga XL" class="img-fluid">
-      </div>
+    </div>
   </div>
-  <div class="row justify-content-center">
-      <div class="col-auto">
-          <button class="btn btn-outline-dark btn-custom">Conocé más</button>
-      </div>
-  </div>
-</div>
-</div>
-<div class=" bg-success text-white d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+  <div class="bg-success text-white d-flex justify-content-center align-items-center" style="min-height: 70vh;">
     <div class="container-fluid map-section">
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
-                <h1 class="custom">¿Dónde estamos?</h2>
-                <h2 class="custom-p">Nuestra planta productiva se encuentra estratégicamente ubicada en Pilar, a 52 km de Córdoba Capital.</p>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 text-center mb-4 mb-md-0" style="padding: 0 100px;">
+              <h1 class="custom" style="text-align: left; font-size: 4rem;">¿Dónde estamos?</h1>
+              <h2 class="custom-p" style="text-align: left; font-size: 2rem;" >Nuestra planta productiva se encuentra estratégicamente ubicada en Pilar, a 52 km de Córdoba Capital.</h2>
             </div>
             <div class="col-md-6">
                 <div class="map-responsive" style="min-height: 65vh;">
                     <iframe 
                         src="https://maps.google.com/maps?q=blvd.+juan+bautista+alberdi+180%2C+pilar%2C+cordoba&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        width="500%" 
+                        width="100%" 
                         height="450" 
                         style="border:0;" 
                         allowfullscreen="" 
@@ -598,45 +620,43 @@
             </div>
         </div>
     </div>
-</div>
-<!-- Sección de Expansión -->
-<section class="expansion-section container">
-  <div class="row">
-      <div class="col-md-6 text-column">
-          <h2>¿Querés involucrarte en un sector en constante expansión?</h2>
-          <p>Si estás involucrado en el sector de la tecnología y la impresión 3D y deseas comercializar nuestros productos bajo tu propia marca, ofrece la calidad de Elda como fabricante y súmate a un negocio en constante expansión.</p>
-      </div>
-      <div class="col-md-6 form-column">
-          <script data-b24-form="inline/100/9lpv04" data-skip-moving="true">
-              (function(w,d,u){
-              var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-              var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-              })(window,document,'https://cdn.bitrix24.es/b12173527/crm/form/loader_100.js');
-          </script>
-      </div>
   </div>
-</section>
-
-<!-- Sección de Pie de Página -->
-<footer class="footer-section">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-4 footer-logo">
-              <img src="../imagenes/logo_footer.svg" alt="ELDA Logo" class="footer-logo-img">
-          </div>
-          <div class="col-md-4">
-              <h5>Contactanos</h5>
-              <p>info@elda3d.com.ar<br>+54 9 3517 072129</p>
-          </div>
-          <div class="col-md-4">
-              <h5>Argentina</h5>
-              <p>Juan Bautista Alberdi 555<br>Pilar Río Segundo</p>
-          </div>
-      </div>
-      <p class="mt-4">© 2024. ELDA</p>
-  </div>
-</footer>
-
+  <!-- Sección de Expansión -->
+  <section class="expansion-section container">
+    <div class="row">
+        <div class="col-md-6 text-column">
+            <h2>¿Querés involucrarte en un sector en constante expansión?</h2>
+            <p>Si estás involucrado en el sector de la tecnología y la impresión 3D y deseas comercializar nuestros productos bajo tu propia marca, ofrece la calidad de Elda como fabricante y súmate a un negocio en constante expansión.</p>
+        </div>
+        <div class="col-md-6 form-column">
+            <script data-b24-form="inline/100/9lpv04" data-skip-moving="true">
+                (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                })(window,document,'https://cdn.bitrix24.es/b12173527/crm/form/loader_100.js');
+            </script>
+        </div>
+    </div>
+  </section>
+  <!-- Sección de Pie de Página -->
+  <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 footer-logo">
+                <img src="../imagenes/logo_footer.svg" alt="ELDA Logo" class="footer-logo-img">
+            </div>
+            <div class="col-md-4">
+                <h5>Contactanos</h5>
+                <p>info@elda3d.com.ar<br>+54 9 3517 072129</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Argentina</h5>
+                <p>Juan Bautista Alberdi 555<br>Pilar Río Segundo</p>
+            </div>
+        </div>
+        <p class="mt-4">© 2024. ELDA</p>
+    </div>
+  </footer>
 </body>
 </html>
 
