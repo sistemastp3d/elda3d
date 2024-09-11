@@ -1,352 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELDA - Innovación y Calidad</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-        
-        .hero {
-            background-image: url(../imagenes/imagen1.webp);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            color: white;
-            height: 700px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            line-height: 1.5; /* Espaciado entre líneas */
-            font-family: 'Space Grotesk', sans-serif;
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 0;
-            box-decoration-break: clone;
-            -webkit-box-decoration-break: clone;
-            
-        }
-        h1  span{
-            background: #181A1D;
-            color: #fff;
-            padding: 5px 30px 0;
-        }
-        .services .card img {
-            height: 200px;
-            object-fit: cover;
-        }
-        .services p {
-            margin-top: 30px;
-        }
-        .navbar-nav .nav-item {
-            margin: 0 60px; /* Agrega margen a los elementos de navegación */
-        }
-        .navbar-nav .nav-link {
-            font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a los enlaces de navegación */
-            font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
-            font-weight: 700; /* Hace que el texto esté en negrita */
-        }
-        .custom-p {
-            font-family: 'Open Sans', sans-serif; /* Aplica la fuente Open Sans al párrafo */
-            font-size: 1.5rem; /* Ajusta el tamaño de la fuente del párrafo */
-        }
-        .custom-p2{
-            font-family: 'Open Sans', sans-serif; /* Aplica la fuente Open Sans al párrafo */
-            font-size: 1.3rem; /* Ajusta el tamaño de la fuente del párrafo */
-        }
-        .section {
-            display: flex;
-            align-items: center;
-            justify-content: right;
-            background-color: #35CB67; /* Fondo verde */
-            color: white;
-            height: auto; /* Cambiar a auto para permitir que la altura se ajuste al contenido */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELDA - Innovación y Calidad</title>
+  <link rel="icon" href="../imagenes/logo_elda.webp" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS externo -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        .text-container {
-            flex: 1;
-            padding: 100px;
-            text-align: left;
-        }
-
-        .image-container {
-            flex:1;
-            display: flex;
-            justify-content:right;
-            align-items:center;
-            padding: 0;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 913px) {
-        .section {
-            flex-direction: column;
-            padding: 0;
-        }
-
-        .text-container {
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-        }
-
-        .image-container {
-            width: 100%;
-            padding: 0;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .section .image-container {
-            height: 50vh;
-        }
-
-        .section img {
-            height: 100%;
-            width: auto;
-        }
-
-
-        .text-container p{
-
-          text-align: left;
-
-        }
-
-    }
-
-    .text-container h1 {
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 4rem; /* Aumenta el tamaño del título principal */
-        padding-bottom: 50px;
-    }
-
-    .text-container h2 {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 2.5rem; /* Aumenta el tamaño del subtítulo */
-    }
-
-    .text-container p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 2rem; /* Aumenta el tamaño del texto del párrafo */
-    }
-    .custom-bg {
-    background-color: #F1F1F1; /* Cambia este valor al tono de gris que prefieras */
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.carousel-indicators button {
-    background-color: white; /* Cambia el color de fondo de los puntos */
-  }
-  .carousel-indicators .active {
-    background-color: #35CB67; /* Cambia el color del punto activo */
-  }
-
-  .carousel-inner {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .carousel-item {
-        flex: 0 0 100%;  /* Cada tarjeta ocupa el 100% del ancho del contenedor */
-    }
-
-    .card {
-        min-height:250px;  /* Ajusta esta altura según sea necesario */
-    }
-
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        text-align: center;
-    }
-    .image-container imgSec4 {
-            width: 100%;
-            max-width: 150px;
-            margin: 10px;
-        }
-        .btn-custom btnSec4{
-            margin-top: 20px;
-        }
-
-        .imgSec4 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-@media (max-width: 767.98px) {
-    .imgSec4 {
-        margin-bottom: 15px; /* Espacio entre imágenes en dispositivos pequeños */
-    }
-}
-
-@media (min-width: 767px) {
-    .row.justify-content-center {
-        display: flex;
-        justify-content: space-around;
-    }
-}
-.imgSec4 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 767.98px) {
-    .col-6 {
-        max-width: 50%;
-    }
-}
-
-.container h2 {
-    margin-bottom: 3rem; /* Ajusta el valor para aumentar o disminuir el espacio */
-}
-
-
-/* Estilo de la sección de mapa */
-.bg-success {
-    background-color: #35CB67 !important; /* Color de fondo verde */
-}
-
-.text-white {
-    color: white !important; /* Color del texto blanco */
-}
-
-.py-5 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-md-left {
-    text-align: left;
-}
-
-@media (max-width: 767.98px) {
-    .text-md-left {
-        text-align: center;
-    }
-}
-.bg-success {
-    background-color: #35CB67 !important; /*
-     Color de fondo verde */
-}
-
-.text-white {
-    color: white !important; /* Color del texto blanco */
-}
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
-    position: relative;
-    height: 0;
-}
-
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.d-flex {
-    display: flex;
-}
-.justify-content-center {
-    justify-content: center;
-}
-
-.align-items-center {
-    align-items: center;
-}
-.map-section h1 {
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 3rem; /* Aumenta el tamaño del título principal */
-        padding-bottom: 50px;
-    }
-.map-section h2 {
-            font-family: 'Open Sans', sans-serif; /* Aplica la fuente Open Sans al párrafo */
-            font-size: 1.5rem; /* Ajusta el tamaño de la fuente del párrafo */
-              }    
-@media (max-width: 767.98px) {
-    .text-md-left {
-        text-align: center;
-    }
-}
-.expansion-section {
-            padding: 200px 0;
-        }
-        .expansion-section .text-column {
-            font-size: 1.2rem;
-        }
-        .expansion-section .form-column {
-            background-color: #e5e5e5;
-            border-radius: 10px;
-            padding: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 200px;
-        }
-        .footer-section {
-            background-color: #111213;
-            color: #fff;
-            padding: 30px 0;
-            text-align: center;
-        }
-        .footer-section .footer-logo {
-            margin-bottom: 1px;
-        }
-        .footer-logo-img {
-        width: 150px; /* Aquí ajustas el tamaño del logo */
-        height: auto;
-}
-      @media (max-width: 767.98px) {
-        .map-section {
-          padding: 0 15px; /* Adjust padding for small screens */
-        }
-        .custom {
-          text-align: center;
-          font-size: 3rem; /* Adjust font size for smaller screens if needed */
-        }
-        .custom-p {
-          text-align: center;
-          font-size: 1.5rem; /* Adjust font size for smaller screens if needed */
-        }
-      }
-</style>
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand mx-auto" href="#"><img src="../imagenes/logo_elda.webp" alt="Logo ELDA" height="40"></a> <!-- logo -->
+            <a class="navbar-brand mx-auto" href="index.html"><img src="../imagenes/logo_elda.webp" alt="Logo ELDA" height="40"></a> <!-- logo -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -403,8 +74,7 @@
         <div class="text-container">
             <h1>FILAMENTO 3D</h1>
             <h2>¿Qué hace que nuestro filamento<br class=".hide-on-small"> sea excepcional?</h2>
-            <p>La calidad del filamento es un factor<br class=".hide-on-small"> crítico en la impresión 3D, donde la<br class=".hide-on-small">
-                 consistencia y la pureza del material<br class=".hide-on-small"> son esenciales para obtener resultados exitosos.</p>
+            <p>La calidad del filamento es un factor<br class=".hide-on-small"> crítico en la impresión 3D, donde la<br class=".hide-on-small"> consistencia y la pureza del material<br class=".hide-on-small"> son esenciales para obtener resultados exitosos.</p>
         </div>
         <div class="image-container">
             <img src="../imagenes/Filamento3d.webp" alt="Filamento 3D" style="width: 100%; height: auto;">
@@ -599,7 +269,10 @@
       </div>
     </div>
   </div>
-  <div class="bg-success text-white d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+  
+  <!--Sección Dónde Estamos-->
+
+  <div class="bg-success d-flex justify-content-center align-items-center">
     <div class="container-fluid map-section">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-6 text-center mb-4 mb-md-0" style="padding: 0 100px;">
@@ -607,9 +280,9 @@
               <h2 class="custom-p" style="text-align: left; font-size: 2rem;" >Nuestra planta productiva se encuentra estratégicamente ubicada en Pilar, a 52 km de Córdoba Capital.</h2>
             </div>
             <div class="col-md-6">
-                <div class="map-responsive" style="min-height: 65vh;">
+                <div class="map-responsive">
                     <iframe 
-                        src="https://maps.google.com/maps?q=blvd.+juan+bautista+alberdi+180%2C+pilar%2C+cordoba&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        src="https://maps.google.com/maps?q=blvd.+juan+bautista+alberdi+180%2C+pilar%2C+cordoba&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                         width="100%" 
                         height="450" 
                         style="border:0;" 
