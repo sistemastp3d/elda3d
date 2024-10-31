@@ -206,7 +206,7 @@ body {
 .cards{
 
     background-color: #F1F1F1;
-
+    padding-top: 30px;
     padding-bottom: 5%;
 
 }
@@ -367,7 +367,20 @@ body {
     max-width: 100%;
     height: auto;
 }
+.ecofila-video .ecofila-video-texto{
 
+    padding-right: 10rem;
+
+}
+.ecofila-video .ecofila-video-texto h2{
+
+    font-family: "Space Grotesk";
+    font-size: 3.5rem;
+}
+.ecofila-video .ecofila-video-texto p{
+
+    font-size: 1.5rem;
+}
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
