@@ -16,22 +16,24 @@
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand mx-auto" href="index.html"><img src="../imagenes/logo_elda.webp" alt="Logo ELDA" height="40"></a> <!-- logo -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#filamento">Filamento 3D</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#estrusion-fila">Extrusión de Filamento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ecofila.html">Ecofila</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <div class="container">
+          <a class="navbar-brand mx-auto" href="index.html">
+              <img src="../imagenes/logo_elda.webp" alt="Logo ELDA" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#filamento">Filamento 3D</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#estrusion-fila">Extrusión de Filamento</a></li>
+                  <li class="nav-item"><a class="nav-link" href="ecofila.html">Ecofila</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
     <!-- FIN Barra de navegación -->
     <!-- Hero Section -->
     <div class="hero h1">
@@ -247,7 +249,7 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container text-center my-5">
+    <div class="container text-center my-5" style="padding: 100px 0;">
       <h2>Fabricantes de <span style="color: green;">ECO</span>FILA</h2>
       <div class="row justify-content-center">
           <div class="col-6 col-md-3 d-flex justify-content-center mb-4">
@@ -263,7 +265,7 @@
               <img src="../imagenes/ECOFILA-RECARGA-XL.webp" alt="Ecofila Recarga XL" class="img-fluid">
           </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" style="padding: 50px 0;">
           <div class="col-auto">
               <button class="btn btn-outline-dark btn-custom">Conocé más</button>
           </div>
@@ -295,23 +297,31 @@
         </div>
     </div>
   </div>
-  <!-- Sección de Expansión -->
+
   <section class="expansion-section container">
-    <div class="row">
+    <div class="row justify-content-center text-center">
         <div class="col-md-6 text-column">
             <h2>¿Querés involucrarte en un sector en constante expansión?</h2>
             <p>Si estás involucrado en el sector de la tecnología y la impresión 3D y deseas comercializar nuestros productos bajo tu propia marca, ofrece la calidad de Elda como fabricante y súmate a un negocio en constante expansión.</p>
-        </div>
-        <div class="col-md-6 form-column">
-            <script data-b24-form="inline/100/9lpv04" data-skip-moving="true">
-                (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-                })(window,document,'https://cdn.bitrix24.es/b12173527/crm/form/loader_100.js');
-            </script>
+            <h2 class="contact-email">Contactanos: <span id="email">info@elda.com.ar</span></h2>
+            <button class="expansion-button" onclick="copyEmail()">Copiar correo</button>
         </div>
     </div>
-  </section>
+</section>
+
+  
+  <script>
+    function copyEmail() {
+      const emailText = document.getElementById("email").innerText;
+      navigator.clipboard.writeText(emailText).then(() => {
+          alert("Correo copiado al portapapeles");
+      }).catch(err => {
+          console.error('Error al copiar el correo: ', err);
+      });
+  }
+  
+  </script>
+
   <!-- Sección de Pie de Página -->
   <footer class="footer-section">
     <div class="container">
